@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcodewelder=self.webpackChunkcodewelder||[]).push([[826],{648:(e,n,t)=>{t.r(n),Object.keys(window.components).forEach((function(e){if(document.querySelector(window.components[e]))switch(e){case"preactComponent":Promise.all([t.e(736),t.e(152)]).then(t.bind(t,332)).then((function(e){return e.init()}));break;case"vanillaComponent":t.e(928).then(t.bind(t,256)).then((function(e){return e.init()}))}}))}},e=>{e(e.s=648)}]);
+//# sourceMappingURL=index.js.map

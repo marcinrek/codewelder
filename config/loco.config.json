@@ -1,0 +1,13 @@
+{
+  "appPort": 8888,
+  "appHost": "127.0.0.1",
+  "functionsPath": ["src/loco/**/*.js"],
+  "envFile": ".env",
+  "reloadOnRequest": true,
+  "optionsRequestHeaders": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "*"
+  },
+  "optionsRequestStatusCode": 200
+}

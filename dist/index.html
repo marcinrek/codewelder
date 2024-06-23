@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <title>Code Welder | Homepage</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        
+        <link rel="manifest" href="/manifest.json">
+        
+        <link href="assets/css/index.css" rel="stylesheet">
+<script>
+            // This is required for dynamic loading of components that are present on a given page.
+            window.components = {}; 
+        </script>    </head>
+
+    <body class="p-4">
+        <main class="container mx-auto px-4 pb-4 prose">
+            <h1>Sample components</h1>
+
+            <section class="bg-slate-200 p-4 mb-4">
+                <h2>Handlebars Component</h2>
+
+<div class="handlebarsComponent">
+    <div>
+      <h3>This is a handlebars component.</h3>
+      <p>It presents how to use a inline partial.</p>
+      <h4><p>This is the inline title.</p></h4>
+      <p><p>Lorem ipsum ...</p></p>
+    </div>
+</div>            </section>
+
+            <section class="bg-slate-200 p-4 mb-4">
+                <h2>Preact Component</h2>
+                <div class="preactComponent" data-props='{"allGood":true,"env":"PROD","_":{"fileName":"index.html"}}'><p>Scaffold component. This component contains a hydration example.</p><button></button><p>All props:</p><pre><code>{
+  &quot;allGood&quot;: true,
+  &quot;env&quot;: &quot;PROD&quot;,
+  &quot;_&quot;: {
+    &quot;fileName&quot;: &quot;index.html&quot;
+  }
+}</code></pre></div>
+                
+                <script>
+                    window.components.preactComponent = '.preactComponent';
+                </script>            </section>
+
+            <section class="bg-slate-200 p-4 mb-4">
+                <h2>Vanilla Component</h2>
+                <div class="vanillaComponent"><p>My name is Jeff!</p> </div>
+                
+                <script>
+                    window.components.vanillaComponent = '.vanillaComponent';
+                </script>            </section>
+        </main>
+
+        <footer class="container mx-auto px-4 pb-4">
+            &copy; <a href="https://www.r3k.pl">R3K</a>
+        </footer>
+
+        <div class="flex flex-row fixed bottom-4 right-4 text-xs">
+            <div class="p-2 mr-2 bg-gray-700 text-white rounded-full">all</div>
+            <div class="p-2 mr-2 bg-yellow-800 text-white hidden sm:block rounded-full">SM</div>
+            <div class="p-2 mr-2 bg-green-900 text-white hidden md:block rounded-full">MD</div>
+            <div class="p-2 mr-2 bg-violet-800 text-white hidden lg:block rounded-full">LG</div>
+            <div class="p-2 mr-2 bg-blue-900 text-white hidden xl:block rounded-full">XL</div>
+            <div class="p-2 mr-2 bg-red-900 text-white hidden 2xl:block rounded-full">2XL</div>
+        </div>
+
+        <script src="assets/js/runtime.js"></script>
+<script src="assets/js/index.js"></script>
+    </body>
+</html>

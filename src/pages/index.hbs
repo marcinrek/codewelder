@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <title>{{title}} | Homepage</title>
+
+        {{> hbs/head}}
+    </head>
+
+    <body class="p-4">
+        <main class="container mx-auto px-4 pb-4 prose">
+            <h1>Sample components</h1>
+
+            {{!-- Sample Handlebars Component --}}
+            <section class="bg-slate-200 p-4 mb-4">
+                <h2>Handlebars Component</h2>
+                {{#> handlebarsComponent/handlebarsComponent 
+                    title="This is a handlebars component."
+                    lead="It presents how to use a inline partial." 
+                }}
+                    {{#*inline "title"}}This is the inline title.{{/inline}}
+                    {{#*inline "content"}}Lorem ipsum ...{{/inline}}
+                {{/handlebarsComponent/handlebarsComponent}}
+            </section>
+
+            {{!-- Sample Preact Component --}}
+            <section class="bg-slate-200 p-4 mb-4">
+                <h2>Preact Component</h2>
+                {{> preactComponent/preactComponent }}
+            </section>
+
+            {{!-- Sample Vanilla Component --}}
+            <section class="bg-slate-200 p-4 mb-4">
+                <h2>Vanilla Component</h2>
+                {{> vanillaComponent/vanillaComponent }}
+            </section>
+        </main>
+
+        <footer class="container mx-auto px-4 pb-4">
+            &copy; <a href="https://www.r3k.pl">R3K</a>
+        </footer>
+
+        {{> hbs/tailwindHelper }}
+
+
+        <script src="src/js/index.js"></script>
+    </body>
+</html>
