@@ -1,2 +1,2 @@
-"use strict";(self.webpackChunkcodewelder=self.webpackChunkcodewelder||[]).push([[928],{256:(e,l,n)=>{n.r(l),n.d(l,{init:()=>c});var c=function(){console.log("vanillaComponent init() called")}}}]);
+"use strict";(self.webpackChunkcodewelder=self.webpackChunkcodewelder||[]).push([[928],{2810:(e,l,n)=>{n.r(l),n.d(l,{init:()=>c});var c=function(){console.log("vanillaComponent init() called")}}}]);
 //# sourceMappingURL=vanillaComponent.js.map

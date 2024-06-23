@@ -1,8 +1,7 @@
-import {h, Fragment} from 'preact';
-import {useState, useEffect} from 'preact/hooks';
+import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 
-export const PreactComponent = (props) => {
+export const ReactComponent = (props) => {
     const [pageRendered, setPageRendered] = useState(false);
 
     useEffect(() => {
@@ -10,23 +9,25 @@ export const PreactComponent = (props) => {
     }, []);
 
     return (
-        <Fragment>
+        <>
             <p>Scaffold component. This component contains a hydration example.</p>
             {pageRendered && <p className="p-3 bg-slate-700 text-white inline-flex">↪ This gets injected with useEffect on page render.↩</p>}
             <button
                 onClick={() => {
                     alert(new Date());
                 }}
-            ></button>
+            >
+                Show Date
+            </button>
 
             <p>All props:</p>
             <pre>
                 <code>{JSON.stringify(props, null, 2)}</code>
             </pre>
-        </Fragment>
+        </>
     );
 };
 
-PreactComponent.propTypes = {
+ReactComponent.propTypes = {
     _: PropTypes.object,
 };

@@ -46,11 +46,11 @@
     "dotenv": "^16.4.5",
     "dotenv-webpack": "^8.1.0",
     "eslint": "^8.57.0",
-    "eslint-config-preact": "^1.4.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-formatter-codeframe": "^7.32.1",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jest": "^27.6.0",
+    "eslint-plugin-react": "^7.34.3",
     "eslint-webpack-plugin": "^4.0.1",
     "glob-import-loader": "^1.2.0",
     "handlebars": "^4.7.8",
@@ -74,13 +74,11 @@
     "webpackssrplugin": "^0.2.6"
   },
   "dependencies": {
-    "@preact/compat": "^17.1.2",
     "dompurify": "^3.0.6",
     "node-fetch": "^2.7.0",
     "normalize.css": "^8.0.1",
-    "preact": "^10.22.0",
-    "preact-iso": "^2.6.2",
-    "preact-render-to-string": "^6.4.2",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

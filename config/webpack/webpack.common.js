@@ -40,13 +40,7 @@ module.exports = (env) => {
                     // test: /\.jsx?$/,
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
-                    // use: ['babel-loader'],
-                    use: {
-                        loader: 'babel-loader',
-                        options: {
-                            presets: ['@babel/preset-env', ['@babel/preset-react', {pragma: 'h'}]],
-                        },
-                    },
+                    use: ['babel-loader'],
                 },
                 {
                     test: /\.(ico|png|jp?g|webp|svg)$/,

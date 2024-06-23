@@ -32,14 +32,14 @@
     <div>
       <h3>This is a handlebars component.</h3>
       <p>It presents how to use a inline partial.</p>
-      <h4><p>This is the inline title.</p></h4>
-      <p><p>Lorem ipsum ...</p></p>
+      <h4>This is the inline title.</h4>
+      <p>Lorem ipsum ...</p>
     </div>
 </div>            </section>
 
             <section class="bg-slate-200 p-4 mb-4">
-                <h2>Preact Component</h2>
-                <div class="preactComponent" data-props='{"allGood":true,"env":"PROD","_":{"fileName":"index.html"}}'><p>Scaffold component. This component contains a hydration example.</p><button></button><p>All props:</p><pre><code>{
+                <h2>React Component</h2>
+                <div class="reactComponent" data-props='{"allGood":true,"env":"PROD","_":{"fileName":"index.html"}}'><p>Scaffold component. This component contains a hydration example.</p><button>Show Date</button><p>All props:</p><pre><code>{
   &quot;allGood&quot;: true,
   &quot;env&quot;: &quot;PROD&quot;,
   &quot;_&quot;: {
@@ -48,7 +48,7 @@
 }</code></pre></div>
                 
                 <script>
-                    window.components.preactComponent = '.preactComponent';
+                    window.components.reactComponent = '.reactComponent';
                 </script>            </section>
 
             <section class="bg-slate-200 p-4 mb-4">
@@ -74,6 +74,7 @@
         </div>
 
         <script src="assets/js/runtime.js"></script>
+<script src="assets/js/vendor.js"></script>
 <script src="assets/js/index.js"></script>
     </body>
 </html>

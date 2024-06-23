@@ -1,8 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    react: 'preact/compat',
-    'react-dom': 'preact/compat',
     rootDir: path.resolve(__dirname, '../'),
     src: path.resolve(__dirname, '../src/'),
     common: path.resolve(__dirname, '../src/common/'),

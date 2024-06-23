@@ -27,14 +27,10 @@
     "extends": ["eslint:recommended", "eslint-config-prettier", "plugin:react/recommended", "plugin:jest/style"],
     "settings": {
         "react": {
-            "pragma": "h",
             "version": "detect"
         },
         "jest": {
             "version": 29
         }
-    },
-    "globals": {
-        "h": "writable"
     }
 }
